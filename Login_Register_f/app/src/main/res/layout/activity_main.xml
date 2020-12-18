@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_color"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_essay"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_home"
+            android:text="@string/tab_menu_home" />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_image"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_find"
+            android:text="@string/tab_menu_find" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_user"
+            android:text="@string/tab_menu_user"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/white"
+        android:layout_above="@id/rg_tab_bar"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:id="@+id/ly_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

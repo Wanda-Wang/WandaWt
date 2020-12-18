@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login_Register_f</string>
+    <string name="tab_menu_home">文章</string>
+    <string name="tab_menu_find">图片</string>
+    <string name="tab_menu_user">个人中心</string>
+    <string name="tab_menu_message">消息</string>
+</resources>
